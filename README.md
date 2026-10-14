@@ -115,8 +115,11 @@ Saves stay on your device; you can export a game to a file and open it on anothe
 
 ---
 
-<sub>
+### Условия / Terms
 
-**Условия / Terms.** Игра бесплатная / The game is free to play. Код / Code: [PolyForm Strict 1.0.0](LICENSE) - исходники можно читать, но не распространять, менять и использовать в коммерции / source available to read; no distribution, changes or commercial use. Графика, звуки и музыка / Art, sounds and music: [CC BY-NC 4.0](LICENSE-ASSETS.txt). Название «Hearthvale», вывеска и иконка - все права защищены / the name, title sign and icon - all rights reserved. Шрифты и библиотеки / Fonts and libraries: [NOTICE](assets/licenses/NOTICE.txt), происхождение графики / art origin: [CREDITS](assets/CREDITS.md). Код со стороны не принимается, идеи и ошибки - в [Issues](https://github.com/WiverHome/hearthvale/issues) / outside code is not accepted, ideas and bug reports are welcome in Issues.
-
-</sub>
+- Игра бесплатная / The game is free to play.
+- Код / Code: [PolyForm Strict 1.0.0](LICENSE) - исходники можно читать, но не распространять, менять и использовать в коммерции / source available to read; no distribution, changes or commercial use.
+- Графика, звуки и музыка / Art, sounds and music: [CC BY-NC 4.0](LICENSE-ASSETS.txt).
+- Название «Hearthvale», вывеска и иконка - все права защищены / The name, title sign and icon - all rights reserved.
+- Шрифты и библиотеки / Fonts and libraries: [NOTICE](assets/licenses/NOTICE.txt); происхождение графики / art origin: [CREDITS](assets/CREDITS.md).
+- Код со стороны не принимается, идеи и ошибки - в [Issues](https://github.com/WiverHome/hearthvale/issues) / Outside code is not accepted; ideas and bug reports are welcome in Issues.
