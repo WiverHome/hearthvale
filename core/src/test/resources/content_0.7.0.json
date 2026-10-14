@@ -1,0 +1,1129 @@
+{
+  "resources": [
+    {
+      "id": "logs",
+      "color": "8a5a2b",
+      "price": 2,
+      "name": {
+        "ru": "Брёвна",
+        "en": "Logs"
+      }
+    },
+    {
+      "id": "planks",
+      "color": "d8b070",
+      "price": 4,
+      "limit": 100,
+      "name": {
+        "ru": "Доски",
+        "en": "Planks"
+      }
+    },
+    {
+      "id": "stone",
+      "color": "9a9a9a",
+      "price": 4,
+      "limit": 100,
+      "name": {
+        "ru": "Камень",
+        "en": "Stone"
+      }
+    },
+    {
+      "id": "grain",
+      "color": "e8d060",
+      "price": 3,
+      "limit": 60,
+      "name": {
+        "ru": "Зерно",
+        "en": "Grain"
+      }
+    },
+    {
+      "id": "flour",
+      "color": "f4f0e0",
+      "price": 5,
+      "limit": 30,
+      "name": {
+        "ru": "Мука",
+        "en": "Flour"
+      }
+    },
+    {
+      "id": "bread",
+      "color": "c07830",
+      "price": 6,
+      "name": {
+        "ru": "Хлеб",
+        "en": "Bread"
+      }
+    },
+    {
+      "id": "fish",
+      "color": "70a8c8",
+      "price": 4,
+      "name": {
+        "ru": "Рыба",
+        "en": "Fish"
+      }
+    },
+    {
+      "id": "water",
+      "color": "3a7bd5",
+      "price": 1,
+      "limit": 40,
+      "name": {
+        "ru": "Вода",
+        "en": "Water"
+      }
+    },
+    {
+      "id": "meat",
+      "color": "c04a3a",
+      "price": 5,
+      "name": {
+        "ru": "Дичь",
+        "en": "Game"
+      }
+    },
+    {
+      "id": "apples",
+      "color": "d0402a",
+      "price": 3,
+      "name": {
+        "ru": "Яблоки",
+        "en": "Apples"
+      }
+    },
+    {
+      "id": "wool",
+      "color": "f0ece0",
+      "price": 4,
+      "limit": 30,
+      "name": {
+        "ru": "Шерсть",
+        "en": "Wool"
+      }
+    },
+    {
+      "id": "cloth",
+      "color": "7a5ab0",
+      "price": 9,
+      "limit": 40,
+      "name": {
+        "ru": "Ткань",
+        "en": "Cloth"
+      }
+    },
+    {
+      "id": "ale",
+      "color": "d8a030",
+      "price": 12,
+      "limit": 30,
+      "name": {
+        "ru": "Эль",
+        "en": "Ale"
+      }
+    }
+  ],
+  "start": {
+    "hall": "hall",
+    "house": "house",
+    "houses": 2,
+    "citizens": 8,
+    "gold": 60,
+    "stock": {
+      "planks": 40,
+      "stone": 24,
+      "logs": 20,
+      "bread": 30,
+      "water": 30
+    }
+  },
+  "needs": [
+    {
+      "id": "food",
+      "goods": [
+        "bread",
+        "fish",
+        "meat",
+        "apples"
+      ],
+      "use": 50,
+      "weight": 30,
+      "vital": true,
+      "season": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "name": {
+        "ru": "Еда",
+        "en": "Food"
+      }
+    },
+    {
+      "id": "water",
+      "goods": [
+        "water"
+      ],
+      "use": 40,
+      "weight": 20,
+      "vital": true,
+      "season": [
+        100,
+        150,
+        100,
+        100
+      ],
+      "name": {
+        "ru": "Вода",
+        "en": "Water"
+      }
+    },
+    {
+      "id": "heat",
+      "goods": [
+        "logs"
+      ],
+      "use": 60,
+      "weight": 15,
+      "vital": true,
+      "season": [
+        0,
+        0,
+        40,
+        100
+      ],
+      "name": {
+        "ru": "Дрова",
+        "en": "Firewood"
+      }
+    },
+    {
+      "id": "clothes",
+      "goods": [
+        "cloth"
+      ],
+      "use": 15,
+      "weight": 10,
+      "season": [
+        100,
+        60,
+        100,
+        150
+      ],
+      "name": {
+        "ru": "Одежда",
+        "en": "Clothes"
+      },
+      "tier": 2
+    },
+    {
+      "id": "market",
+      "service": "market",
+      "level": 1,
+      "weight": 10,
+      "name": {
+        "ru": "Рынок",
+        "en": "Market"
+      }
+    },
+    {
+      "id": "church",
+      "service": "church",
+      "level": 2,
+      "weight": 15,
+      "name": {
+        "ru": "Церковь",
+        "en": "Church"
+      }
+    },
+    {
+      "id": "tavern",
+      "service": "tavern",
+      "tier": 3,
+      "weight": 10,
+      "name": {
+        "ru": "Таверна",
+        "en": "Tavern"
+      }
+    },
+    {
+      "id": "decor",
+      "service": "decor",
+      "level": 2,
+      "weight": 10,
+      "name": {
+        "ru": "Красота",
+        "en": "Beauty"
+      }
+    }
+  ],
+  "levels": [
+    {
+      "pop": 0,
+      "happy": 0,
+      "name": {
+        "ru": "Хутор",
+        "en": "Hamlet"
+      }
+    },
+    {
+      "pop": 16,
+      "happy": 50,
+      "name": {
+        "ru": "Деревня",
+        "en": "Village"
+      }
+    },
+    {
+      "pop": 40,
+      "happy": 55,
+      "name": {
+        "ru": "Село",
+        "en": "Large village"
+      }
+    },
+    {
+      "pop": 90,
+      "happy": 60,
+      "name": {
+        "ru": "Городок",
+        "en": "Town"
+      }
+    },
+    {
+      "pop": 150,
+      "happy": 65,
+      "name": {
+        "ru": "Город",
+        "en": "City"
+      }
+    }
+  ],
+  "buildings": [
+    {
+      "id": "hall",
+      "cat": "home",
+      "role": "hall",
+      "size": 3,
+      "buildable": false,
+      "name": {
+        "ru": "Ратуша",
+        "en": "Town hall"
+      },
+      "capacity": 500,
+      "builders": 3,
+      "look": {
+        "wall": "d0c0a0",
+        "roof": "4a6a9a",
+        "wallH": 24,
+        "roofH": 22
+      }
+    },
+    {
+      "id": "house",
+      "cat": "home",
+      "role": "house",
+      "size": 2,
+      "build": 200,
+      "name": {
+        "ru": "Дом",
+        "en": "House"
+      },
+      "cost": {
+        "planks": 4,
+        "stone": 2
+      },
+      "beds": 4,
+      "look": {
+        "wall": "d8c8a8",
+        "roof": "b04a30",
+        "wallH": 14,
+        "roofH": 16
+      },
+      "tier": 1,
+      "upgrade": "house2",
+      "tax": 100
+    },
+    {
+      "id": "house2",
+      "cat": "home",
+      "role": "house",
+      "buildable": false,
+      "level": 1,
+      "size": 2,
+      "build": 0,
+      "tier": 2,
+      "upgrade": "house3",
+      "tax": 140,
+      "name": {
+        "ru": "Крепкий дом",
+        "en": "Sturdy house"
+      },
+      "cost": {
+        "planks": 6,
+        "stone": 4
+      },
+      "gold": 40,
+      "beds": 6,
+      "look": {
+        "wall": "e0d0b0",
+        "roof": "b04a30",
+        "wallH": 20,
+        "roofH": 16
+      }
+    },
+    {
+      "id": "house3",
+      "cat": "home",
+      "role": "house",
+      "buildable": false,
+      "level": 3,
+      "size": 2,
+      "build": 0,
+      "tier": 3,
+      "tax": 200,
+      "name": {
+        "ru": "Каменный дом",
+        "en": "Stone house"
+      },
+      "cost": {
+        "stone": 10,
+        "planks": 4
+      },
+      "gold": 120,
+      "beds": 8,
+      "look": {
+        "wall": "c8c0b0",
+        "roof": "4a5a7a",
+        "wallH": 24,
+        "roofH": 16
+      }
+    },
+    {
+      "id": "store",
+      "cat": "home",
+      "role": "store",
+      "size": 2,
+      "border": 10,
+      "build": 300,
+      "name": {
+        "ru": "Склад",
+        "en": "Storehouse"
+      },
+      "cost": {
+        "planks": 8,
+        "stone": 4
+      },
+      "upkeep": 2,
+      "capacity": 300,
+      "look": {
+        "wall": "c8b890",
+        "roof": "d0a030",
+        "wallH": 22,
+        "roofH": 18
+      }
+    },
+    {
+      "id": "woodcutter",
+      "cat": "materials",
+      "gather": "wood",
+      "role": "producer",
+      "size": 2,
+      "build": 200,
+      "name": {
+        "ru": "Дровосек",
+        "en": "Woodcutter"
+      },
+      "cost": {
+        "planks": 3
+      },
+      "workers": 2,
+      "recipe": {
+        "out": {
+          "logs": 1
+        },
+        "time": 120
+      },
+      "needs": {
+        "tile": "forest",
+        "radius": 7,
+        "min": 4
+      },
+      "look": {
+        "wall": "8a6a48",
+        "roof": "3f6a35",
+        "wallH": 12,
+        "roofH": 14
+      }
+    },
+    {
+      "id": "forester",
+      "cat": "materials",
+      "gather": "plant",
+      "role": "producer",
+      "size": 2,
+      "build": 180,
+      "name": {
+        "ru": "Лесник",
+        "en": "Forester"
+      },
+      "cost": {
+        "planks": 3
+      },
+      "workers": 1,
+      "recipe": {
+        "time": 100
+      },
+      "needs": {
+        "radius": 5,
+        "min": 4
+      },
+      "upkeep": 1,
+      "look": {
+        "wall": "8a6a48",
+        "roof": "4f7a3a",
+        "wallH": 12,
+        "roofH": 14
+      }
+    },
+    {
+      "id": "sawmill",
+      "cat": "materials",
+      "role": "producer",
+      "size": 2,
+      "build": 300,
+      "name": {
+        "ru": "Лесопилка",
+        "en": "Sawmill"
+      },
+      "cost": {
+        "logs": 6,
+        "stone": 2
+      },
+      "workers": 1,
+      "upkeep": 2,
+      "recipe": {
+        "in": {
+          "logs": 1
+        },
+        "out": {
+          "planks": 1
+        },
+        "time": 80
+      },
+      "look": {
+        "wall": "b08850",
+        "roof": "6a4a2a",
+        "wallH": 16,
+        "roofH": 12
+      }
+    },
+    {
+      "id": "quarry",
+      "cat": "materials",
+      "gather": "stone",
+      "role": "producer",
+      "size": 2,
+      "build": 250,
+      "name": {
+        "ru": "Каменоломня",
+        "en": "Quarry"
+      },
+      "cost": {
+        "planks": 5
+      },
+      "workers": 2,
+      "recipe": {
+        "out": {
+          "stone": 1
+        },
+        "time": 160
+      },
+      "needs": {
+        "tile": "rock",
+        "radius": 6,
+        "min": 2
+      },
+      "look": {
+        "wall": "a0a0a0",
+        "roof": "5a5a62",
+        "wallH": 12,
+        "roofH": 12
+      }
+    },
+    {
+      "id": "farm",
+      "cat": "food",
+      "soil": "fertility",
+      "role": "producer",
+      "level": 1,
+      "size": 3,
+      "build": 300,
+      "name": {
+        "ru": "Ферма",
+        "en": "Farm"
+      },
+      "cost": {
+        "planks": 8
+      },
+      "workers": 2,
+      "upkeep": 2,
+      "recipe": {
+        "out": {
+          "grain": 1
+        },
+        "time": 140
+      },
+      "seasons": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "look": {
+        "wall": "e0c890",
+        "roof": "c09030",
+        "wallH": 12,
+        "roofH": 18
+      }
+    },
+    {
+      "id": "mill",
+      "cat": "food",
+      "role": "producer",
+      "level": 1,
+      "size": 2,
+      "build": 300,
+      "name": {
+        "ru": "Мельница",
+        "en": "Mill"
+      },
+      "cost": {
+        "planks": 6,
+        "stone": 6
+      },
+      "workers": 1,
+      "upkeep": 3,
+      "recipe": {
+        "in": {
+          "grain": 1
+        },
+        "out": {
+          "flour": 1
+        },
+        "time": 100
+      },
+      "look": {
+        "wall": "e8e0d0",
+        "roof": "8a3a2a",
+        "wallH": 22,
+        "roofH": 20
+      }
+    },
+    {
+      "id": "bakery",
+      "cat": "food",
+      "role": "producer",
+      "level": 1,
+      "size": 2,
+      "build": 300,
+      "name": {
+        "ru": "Пекарня",
+        "en": "Bakery"
+      },
+      "cost": {
+        "planks": 6,
+        "stone": 6
+      },
+      "workers": 1,
+      "upkeep": 3,
+      "recipe": {
+        "in": {
+          "flour": 1,
+          "water": 1
+        },
+        "out": {
+          "bread": 3
+        },
+        "time": 100
+      },
+      "look": {
+        "wall": "e0b890",
+        "roof": "a05a30",
+        "wallH": 14,
+        "roofH": 14
+      }
+    },
+    {
+      "id": "fisher",
+      "cat": "food",
+      "gather": "fish",
+      "role": "producer",
+      "size": 2,
+      "build": 200,
+      "name": {
+        "ru": "Рыбак",
+        "en": "Fisher"
+      },
+      "cost": {
+        "planks": 4
+      },
+      "workers": 1,
+      "recipe": {
+        "out": {
+          "fish": 1
+        },
+        "time": 130
+      },
+      "needs": {
+        "tile": "water",
+        "radius": 5,
+        "min": 2
+      },
+      "look": {
+        "wall": "a8b8c0",
+        "roof": "3a5a7a",
+        "wallH": 12,
+        "roofH": 12
+      }
+    },
+    {
+      "id": "well",
+      "cat": "food",
+      "soil": "groundwater",
+      "role": "producer",
+      "size": 2,
+      "build": 150,
+      "name": {
+        "ru": "Колодец",
+        "en": "Well"
+      },
+      "cost": {
+        "stone": 4
+      },
+      "workers": 1,
+      "recipe": {
+        "out": {
+          "water": 2
+        },
+        "time": 90
+      },
+      "look": {
+        "wall": "8a8a92",
+        "roof": "6a4a3a",
+        "wallH": 8,
+        "roofH": 10
+      }
+    },
+    {
+      "id": "market",
+      "cat": "services",
+      "role": "service",
+      "serves": "market",
+      "radius": 9,
+      "level": 1,
+      "size": 2,
+      "build": 250,
+      "name": {
+        "ru": "Рынок",
+        "en": "Market"
+      },
+      "cost": {
+        "planks": 6,
+        "stone": 2
+      },
+      "gold": 40,
+      "workers": 1,
+      "upkeep": 3,
+      "look": {
+        "wall": "e8d8b0",
+        "roof": "c84a3a",
+        "wallH": 10,
+        "roofH": 12
+      }
+    },
+    {
+      "id": "church",
+      "cat": "services",
+      "role": "service",
+      "serves": "church",
+      "radius": 12,
+      "level": 2,
+      "size": 3,
+      "border": 8,
+      "build": 500,
+      "name": {
+        "ru": "Церковь",
+        "en": "Church"
+      },
+      "cost": {
+        "planks": 8,
+        "stone": 14
+      },
+      "gold": 120,
+      "workers": 1,
+      "upkeep": 6,
+      "look": {
+        "wall": "e8e4dc",
+        "roof": "5a6a8a",
+        "wallH": 30,
+        "roofH": 28
+      }
+    },
+    {
+      "id": "hunter",
+      "cat": "food",
+      "gather": "game",
+      "role": "producer",
+      "size": 2,
+      "build": 200,
+      "name": {
+        "ru": "Охотник",
+        "en": "Hunter"
+      },
+      "cost": {
+        "planks": 4
+      },
+      "workers": 1,
+      "recipe": {
+        "out": {
+          "meat": 1
+        },
+        "time": 150
+      },
+      "needs": {
+        "tile": "forest",
+        "radius": 6,
+        "min": 3
+      },
+      "look": {
+        "wall": "7a5a3a",
+        "roof": "5a6a3a",
+        "wallH": 12,
+        "roofH": 12
+      }
+    },
+    {
+      "id": "orchard",
+      "cat": "food",
+      "soil": "fertility",
+      "role": "producer",
+      "level": 1,
+      "size": 2,
+      "build": 250,
+      "name": {
+        "ru": "Сад",
+        "en": "Orchard"
+      },
+      "cost": {
+        "planks": 6
+      },
+      "workers": 2,
+      "upkeep": 2,
+      "recipe": {
+        "out": {
+          "apples": 2
+        },
+        "time": 200
+      },
+      "seasons": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "look": {
+        "wall": "6a4a2c",
+        "roof": "4a8a3a",
+        "wallH": 8,
+        "roofH": 18
+      }
+    },
+    {
+      "id": "pasture",
+      "cat": "materials",
+      "soil": "fertility",
+      "role": "producer",
+      "level": 1,
+      "size": 2,
+      "build": 250,
+      "name": {
+        "ru": "Пастбище",
+        "en": "Pasture"
+      },
+      "cost": {
+        "planks": 6,
+        "stone": 2
+      },
+      "workers": 1,
+      "upkeep": 2,
+      "recipe": {
+        "out": {
+          "wool": 1
+        },
+        "time": 180
+      },
+      "look": {
+        "wall": "9a6a40",
+        "roof": "8a5a3a",
+        "wallH": 8,
+        "roofH": 10
+      }
+    },
+    {
+      "id": "weaver",
+      "cat": "materials",
+      "role": "producer",
+      "level": 1,
+      "size": 2,
+      "build": 300,
+      "name": {
+        "ru": "Ткач",
+        "en": "Weaver"
+      },
+      "cost": {
+        "planks": 6,
+        "stone": 4
+      },
+      "workers": 1,
+      "upkeep": 3,
+      "recipe": {
+        "in": {
+          "wool": 1
+        },
+        "out": {
+          "cloth": 1
+        },
+        "time": 140
+      },
+      "look": {
+        "wall": "e0d0b8",
+        "roof": "6a4a8a",
+        "wallH": 14,
+        "roofH": 14
+      }
+    },
+    {
+      "id": "brewery",
+      "cat": "food",
+      "role": "producer",
+      "level": 2,
+      "size": 2,
+      "build": 350,
+      "name": {
+        "ru": "Пивоварня",
+        "en": "Brewery"
+      },
+      "cost": {
+        "planks": 8,
+        "stone": 8
+      },
+      "workers": 1,
+      "upkeep": 4,
+      "recipe": {
+        "in": {
+          "grain": 1,
+          "water": 1
+        },
+        "out": {
+          "ale": 1
+        },
+        "time": 160
+      },
+      "look": {
+        "wall": "b0a898",
+        "roof": "7a4a2a",
+        "wallH": 16,
+        "roofH": 14
+      }
+    },
+    {
+      "id": "firewatch",
+      "cat": "services",
+      "role": "service",
+      "serves": "fire",
+      "radius": 10,
+      "level": 1,
+      "size": 2,
+      "border": 6,
+      "build": 250,
+      "name": {
+        "ru": "Пожарная каланча",
+        "en": "Fire watch"
+      },
+      "cost": {
+        "planks": 6,
+        "stone": 2
+      },
+      "workers": 1,
+      "upkeep": 2,
+      "look": {
+        "wall": "9a6a40",
+        "roof": "8a3a2a",
+        "wallH": 30,
+        "roofH": 10
+      }
+    },
+    {
+      "id": "healer",
+      "cat": "services",
+      "role": "service",
+      "serves": "health",
+      "radius": 10,
+      "level": 2,
+      "size": 2,
+      "build": 300,
+      "name": {
+        "ru": "Лекарь",
+        "en": "Healer"
+      },
+      "cost": {
+        "planks": 6,
+        "stone": 6
+      },
+      "gold": 30,
+      "workers": 1,
+      "upkeep": 4,
+      "look": {
+        "wall": "f0ece0",
+        "roof": "4a8a4a",
+        "wallH": 14,
+        "roofH": 12
+      }
+    },
+    {
+      "id": "tavern",
+      "cat": "services",
+      "role": "service",
+      "serves": "tavern",
+      "radius": 8,
+      "level": 2,
+      "size": 2,
+      "build": 350,
+      "name": {
+        "ru": "Таверна",
+        "en": "Tavern"
+      },
+      "cost": {
+        "planks": 8,
+        "stone": 6
+      },
+      "workers": 1,
+      "upkeep": 4,
+      "recipe": {
+        "in": {
+          "ale": 1
+        },
+        "time": 400
+      },
+      "look": {
+        "wall": "b08858",
+        "roof": "7a4a2a",
+        "wallH": 16,
+        "roofH": 14
+      }
+    },
+    {
+      "id": "flowerbed",
+      "cat": "decor",
+      "role": "service",
+      "serves": "decor",
+      "radius": 3,
+      "size": 1,
+      "build": 60,
+      "name": {
+        "ru": "Клумба",
+        "en": "Flowerbed"
+      },
+      "cost": {
+        "planks": 2
+      },
+      "gold": 20,
+      "workers": 0,
+      "look": {
+        "wall": "7a9a4a",
+        "roof": "d86a8a",
+        "wallH": 2,
+        "roofH": 4
+      }
+    },
+    {
+      "id": "fountain",
+      "cat": "decor",
+      "role": "service",
+      "serves": "decor",
+      "radius": 7,
+      "level": 1,
+      "size": 2,
+      "build": 200,
+      "name": {
+        "ru": "Фонтан",
+        "en": "Fountain"
+      },
+      "cost": {
+        "stone": 8
+      },
+      "gold": 90,
+      "workers": 0,
+      "look": {
+        "wall": "b0b0b8",
+        "roof": "5aa0d8",
+        "wallH": 6,
+        "roofH": 8
+      }
+    },
+    {
+      "id": "statue",
+      "cat": "decor",
+      "role": "service",
+      "serves": "decor",
+      "radius": 11,
+      "level": 2,
+      "size": 2,
+      "build": 300,
+      "name": {
+        "ru": "Статуя",
+        "en": "Statue"
+      },
+      "cost": {
+        "stone": 14
+      },
+      "gold": 220,
+      "workers": 0,
+      "look": {
+        "wall": "c8c0b0",
+        "roof": "a89880",
+        "wallH": 8,
+        "roofH": 20
+      }
+    },
+    {
+      "id": "watchtower",
+      "cat": "land",
+      "role": "tower",
+      "size": 1,
+      "border": 9,
+      "build": 150,
+      "name": {
+        "ru": "Смотровая вышка",
+        "en": "Watchtower"
+      },
+      "cost": {
+        "logs": 6,
+        "stone": 3
+      },
+      "gold": 15,
+      "upkeep": 1,
+      "look": {
+        "wall": "8a6a48",
+        "roof": "8a3a2a",
+        "wallH": 30,
+        "roofH": 10
+      }
+    }
+  ]
+}

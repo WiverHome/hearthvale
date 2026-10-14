@@ -1,0 +1,12 @@
+{
+  "ru": {
+    "m": ["Алексей", "Борис", "Василий", "Всеволод", "Гаврила", "Глеб", "Демид", "Добрыня", "Евстафий", "Ермолай", "Захар", "Игнат", "Кирилл", "Лука", "Матвей", "Никита", "Олег", "Прохор", "Родион", "Савва", "Тихон", "Фёдор", "Харитон", "Ярослав", "Архип", "Богдан", "Герасим", "Данила", "Емельян", "Иван", "Климент", "Мирон", "Назар", "Осип", "Пётр", "Радим", "Семён", "Тимофей", "Устин", "Юрий"],
+    "f": ["Агафья", "Аксинья", "Анфиса", "Варвара", "Василиса", "Дарья", "Евдокия", "Ефросинья", "Зоя", "Ирина", "Квета", "Лада", "Любава", "Марфа", "Милана", "Настасья", "Олёна", "Пелагея", "Прасковья", "Рогнеда", "Светлана", "Татьяна", "Улита", "Фёкла", "Хавронья", "Ульяна", "Устинья", "Мария", "Елена", "Галина", "Домна", "Ксения", "Лукерья", "Меланья", "Надежда", "Параскева", "Соломея", "Таисия", "Умила", "Яна"],
+    "villages": ["Ольховка", "Берёзово", "Заречье", "Каменка", "Медовуха", "Сосновка", "Липецкое", "Ручьёво", "Овсянка", "Дубравка", "Ясенки", "Боровое", "Луговое", "Ключи", "Мельничье", "Озерки", "Рябиновка", "Хвойное", "Вишнёвка", "Солнцево"]
+  },
+  "en": {
+    "m": ["Alden", "Baldwin", "Cedric", "Dunstan", "Edmund", "Fulk", "Godwin", "Hugh", "Osric", "Piers", "Ralf", "Simon", "Thomas", "Walter", "Wilfred", "Aubrey", "Bertram", "Colin", "Denis", "Elias", "Gerard", "Harold", "Jasper", "Kenric", "Leofric", "Martin", "Nigel", "Oswin", "Percival", "Roger", "Stephen", "Tobias", "Ulric", "Victor", "Warin", "Alaric", "Bryce", "Conrad", "Dudley", "Everard"],
+    "f": ["Agnes", "Beatrice", "Cecily", "Dorothea", "Edith", "Emma", "Felice", "Gwen", "Hilda", "Isolde", "Joan", "Katherine", "Lettice", "Maud", "Nell", "Olive", "Petronella", "Rosamund", "Sibyl", "Thea", "Ursula", "Wynne", "Alice", "Bridget", "Clara", "Daisy", "Elsie", "Frida", "Godiva", "Helen", "Idony", "Juliana", "Kate", "Lucy", "Margery", "Nesta", "Odette", "Philippa", "Rowena", "Tilda"],
+    "villages": ["Alderbrook", "Birchwood", "Riverside", "Stonecroft", "Honeymead", "Pinehollow", "Lindenfield", "Brookhollow", "Oatfield", "Oakdale", "Ashby", "Fernwood", "Meadowmere", "Springwell", "Millbrook", "Lakeside", "Rowanford", "Firwick", "Cherrybrook", "Sunmere"]
+  }
+}

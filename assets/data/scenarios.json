@@ -1,0 +1,93 @@
+{
+  "scenarios": [
+    {
+      "id": "tutorial", "map": [10, 78], "seed": 1207, "size": "medium", "gentle": true,
+      "stock": { "tools": 6, "planks": 40, "stone": 24, "logs": 20, "bread": 60, "water": 40 },
+      "name": { "ru": "Обучение: новая долина", "en": "Tutorial: a new valley" },
+      "desc": { "ru": "Шаг за шагом: дерево, доски, вода, еда, дома, деревня и хлеб. 30-40 минут.",
+                "en": "Step by step: wood, planks, water, food, houses, a village and bread. 30-40 minutes." },
+      "quests": [
+        { "type": "build", "building": "woodcutter", "n": 1, "reward": { "planks": 10 },
+          "hint": { "ru": "Дровосек рубит лес. Нажмите «Строить» внизу, вкладка «Материалы», карточка «Дровосек». Поставьте его на луг у леса: зелёная тень - можно строить. На телефоне здание стоит в центре - двигайте карту под ним и нажмите «Строить».",
+                    "en": "The woodcutter fells trees. Press Build at the bottom, open the Materials tab and pick Woodcutter. Place it on a meadow next to a forest: a green outline means you can build. On a phone the building stays in the center - drag the map under it and press Build." } },
+        { "type": "build", "building": "sawmill", "n": 1, "reward": { "gold": 20 },
+          "hint": { "ru": "Лесопилка (та же вкладка «Материалы») делает из брёвен доски. Всё носят носильщики - свободные жители, поэтому ставьте её между дровосеком и ратушей: чем ближе звенья, тем быстрее.",
+                    "en": "The sawmill (same Materials tab) turns logs into planks. Free citizens carry everything, so put it between the woodcutter and the town hall: the closer the links, the faster the chain." } },
+        { "type": "build", "building": "well", "n": 1, "reward": { "stone": 6 },
+          "hint": { "ru": "Жителям нужна вода, а потом и пекарне. Колодец - во вкладке «Еда и вода», ставится где угодно, лучше у домов.",
+                    "en": "Citizens need water, and later so will the bakery. The well is in the Food & water tab and can go anywhere, ideally near the houses." } },
+        { "type": "build", "building": "fisher", "n": 1, "reward": { "gold": 20 },
+          "hint": { "ru": "Еда: рыбак (вкладка «Еда и вода») у реки. Коснитесь дома - панель покажет, чего жителям хватает и чего нет. Красный значок над домом - голод, жажда или холод.",
+                    "en": "Food: a fisher (Food & water tab) by the river. Tap a house to see what its residents have and lack. A red badge over a house means hunger, thirst or cold." } },
+        { "type": "build", "building": "house", "n": 4, "reward": { "planks": 10 },
+          "hint": { "ru": "Новые жители приходят, только если есть свободная кровать и довольство города не ниже 40%. Постройте ещё два дома (вкладка «Жильё и склады»).",
+                    "en": "Newcomers arrive only when there is a free bed and town happiness is at least 40%. Build two more houses (Homes & storage tab)." } },
+        { "type": "build", "building": "quarry", "n": 1, "reward": { "gold": 20 },
+          "hint": { "ru": "Камень нужен для домов и мельницы. Каменоломня (вкладка «Материалы») ставится у скал. Значок над зданием подскажет, почему оно простаивает.",
+                    "en": "Stone is needed for houses and the mill. Put a quarry (Materials tab) next to rocks. A badge over a building tells you why it is idle." } },
+        { "type": "level", "n": 1, "reward": { "gold": 40 },
+          "hint": { "ru": "Деревней городок станет при 16 жителях и довольстве от 50%. Откроются ферма, мельница, пекарня и рынок. Подробности - в панели ратуши.",
+                    "en": "The hamlet becomes a village at 16 citizens and 50% happiness, unlocking the farm, mill, bakery and market. Tap the town hall for details." } },
+        { "type": "build", "building": "farm", "n": 1, "reward": { "planks": 10 },
+          "hint": { "ru": "Ферма растит зерно весной, летом и осенью, а зимой стоит - её работники на это время становятся носильщиками.",
+                    "en": "The farm grows grain in spring, summer and autumn and rests in winter; its workers carry goods meanwhile." } },
+        { "type": "build", "building": "bakery", "n": 1, "reward": { "flour": 6 },
+          "hint": { "ru": "Мельница мелет зерно в муку, пекарня печёт хлеб из муки и воды. Постройте обе рядом с фермой.",
+                    "en": "The mill grinds grain into flour, the bakery bakes bread from flour and water. Build both near the farm." } },
+        { "type": "build", "building": "market", "n": 1, "reward": { "gold": 30 },
+          "hint": { "ru": "С уровня «Деревня» домам нужен рынок рядом. Он стоит золото - налоги собираются на рассвете и растут с довольством.",
+                    "en": "From Village on, houses want a market nearby. It costs gold: taxes come in at dawn and grow with happiness." } },
+        { "type": "stock", "resource": "logs", "n": 30, "reward": { "bread": 10 },
+          "hint": { "ru": "Осенью и зимой дома жгут дрова. Запасите брёвен заранее: лимит «не больше N» на лесопилке оставит часть брёвен на дрова.",
+                    "en": "Houses burn firewood in autumn and winter. Stock up on logs in advance: an \"up to N\" limit on the sawmill keeps some logs for fuel." } },
+        { "type": "happy", "n": 70, "days": 1, "reward": { "gold": 60 },
+          "hint": { "ru": "Держите довольство 70% целые сутки. Излишки можно продать торговцу - он приходит каждое утро и уходит к полудню (кнопка «Торговец»).",
+                    "en": "Keep happiness at 70% for a whole day. Sell surplus to the trader, who comes every morning and leaves at noon (the Trader button)." } }
+      ]
+    },
+    {
+      "id": "long_winter", "map": [16, 22], "seed": 4411, "size": "small", "startDay": 19, "level": 1,
+      "gold": 150, "citizens": 10, "houses": 3,
+      "stock": { "tools": 4, "planks": 30, "stone": 16, "logs": 10, "bread": 70, "fish": 30, "water": 10 },
+      "name": { "ru": "Долгая зима", "en": "The long winter" },
+      "desc": { "ru": "Осень, запасов мало. Заготовьте дрова и еду, переживите зиму и встретьте весну с 14 жителями. Срок - 48-й день.",
+                "en": "Autumn, and stores are thin. Gather firewood and food, get through winter and greet spring with 14 citizens. Deadline: day 48." },
+      "fail": { "pop": 6, "deadline": 48 },
+      "quests": [
+        { "type": "stock", "resource": "logs", "n": 40, "reward": { "bread": 20 },
+          "hint": { "ru": "Зима начнётся на 22-й день. Без дров довольство падает, и жители уходят.", "en": "Winter starts on day 22. Without firewood happiness drops and citizens leave." } },
+        { "type": "stock", "resource": "fish", "n": 50, "reward": { "gold": 40 },
+          "hint": { "ru": "Ферма зимой стоит, а рыбак и охотник работают круглый год. Запасите 50 рыбы - хлеба до весны не хватит.", "en": "Farms rest in winter, but fishers and hunters work all year. Stock 50 fish - the bread will not last until spring." } },
+        { "type": "pop", "n": 14, "reward": { "gold": 60 },
+          "hint": { "ru": "Весной (с 29-го дня) снова пойдёт зерно. Нужно 14 жителей.", "en": "Grain returns in spring (from day 29). Reach 14 citizens." } },
+        { "type": "happy", "n": 60, "days": 8, "reward": { "gold": 80 },
+          "hint": { "ru": "Последнее: переживите зиму - довольство от 60% 8 суток подряд, до весны.", "en": "Last step: get through winter - 60% happiness for 8 days in a row, until spring." } }
+      ]
+    },
+    {
+      "id": "crossroads", "map": [38, 52], "seed": 2024, "size": "large", "gold": 30, "neighbors": true,
+      "stock": { "tools": 4, "planks": 40, "stone": 24, "logs": 30, "bread": 50, "water": 40 },
+      "name": { "ru": "Торговый перекрёсток", "en": "Trading crossroads" },
+      "desc": { "ru": "Большая долина и пустая казна. Наторгуйте 1000 золота и станьте селом к 22-му дню, не опуская довольство ниже 30%.",
+                "en": "A wide valley and an empty treasury. Earn 1000 gold and become a large village by day 22, keeping happiness above 30%." },
+      "fail": { "happy": 30, "deadline": 22 },
+      "quests": [
+        { "type": "pop", "n": 16, "reward": { "gold": 30 },
+          "hint": { "ru": "Сначала люди: дома, вода, еда.", "en": "People first: houses, water, food." } },
+        { "type": "build", "building": "market", "n": 1, "reward": { "gold": 20 },
+          "hint": { "ru": "Рынок поднимет довольство, а значит, и налоги.", "en": "A market raises happiness, and with it taxes." } },
+        { "type": "gold", "n": 400, "reward": { "planks": 20 },
+          "hint": { "ru": "Продавайте излишки торговцу: в окне торговца можно включить автопродажу сверх лимита. Цены меняются при каждом визите.",
+                    "en": "Sell surplus to the trader: his window lets you auto-sell everything above a limit. Prices change every visit." } },
+        { "type": "level", "n": 2, "reward": { "gold": 100 },
+          "hint": { "ru": "Село: 40 жителей и довольство от 55%. Нужна церковь.", "en": "Large village: 40 citizens and 55% happiness. You will need a church." } },
+        { "type": "gold", "n": 1000, "reward": { "gold": 0 },
+          "hint": { "ru": "Последний рывок: 1000 золота в казне.", "en": "Final push: 1000 gold in the treasury." } }
+      ]
+    },
+    {"id": "frontier", "map": [62, 14], "seed": 7731, "size": "medium", "level": 1, "gold": 300, "citizens": 12, "houses": 3, "threats": true, "raidEvery": 5, "stock": {"tools": 5, "planks": 40, "stone": 30, "logs": 40, "bread": 40, "water": 20}, "name": {"ru": "Пограничье", "en": "The frontier"}, "desc": {"ru": "Окраина королевства: зимой из леса выходят волки, а разбойники ищут, где плохо лежит. Поставьте караул, отбейте набеги и вырастите город. Срок - 22-й день.", "en": "The edge of the kingdom: wolves come out of the woods in winter and bandits look for easy pickings. Post guards, fend off raids and grow the town. Deadline: day 22."}, "fail": {"pop": 6, "deadline": 22}, "quests": [{"type": "build", "building": "guardtower", "n": 1, "reward": {"gold": 40}, "hint": {"ru": "Караульная вышка (вкладка «Границы») прогоняет волков и разбойников в своём радиусе, пока на ней есть стражник.", "en": "A guard tower (Borders tab) drives off wolves and bandits within its radius while a guard is posted."}}, {"type": "pop", "n": 30, "reward": {"planks": 20}, "hint": {"ru": "Разбойники идут к складам, волки - к пастбищам и домам. Частокол (вкладка «Границы», как дорога) их не пропускает - жители проходят через калитки.", "en": "Bandits head for storehouses, wolves for pastures and houses. A palisade (Borders tab, laid like a road) stops them - citizens pass through gates."}}, {"type": "defend", "n": 2, "reward": {"gold": 100}, "hint": {"ru": "Отбейте два набега: стража прогоняет, а стены отрезают путь.", "en": "Fend off two raids: guards drive them away, walls cut them off."}}, {"type": "level", "n": 3, "reward": {"gold": 150}, "hint": {"ru": "Городок - при 90 жителях и довольстве от 60%.", "en": "A town at 90 citizens and 60% happiness."}}]},
+    {"id": "ore_land", "map": [86, 38], "seed": 5150, "size": "medium", "level": 2, "gold": 500, "citizens": 20, "houses": 5, "stock": {"tools": 10, "planks": 60, "stone": 50, "logs": 40, "bread": 80, "water": 50, "coal": 10, "iron": 4}, "name": {"ru": "Рудный край", "en": "Ore country"}, "desc": {"ru": "Горы полны руды. Поставьте рудник, углежога, плавильню и кузницу и сделайте 20 инструментов. Срок - 22-й день.", "en": "The hills are full of ore. Build a mine, a charcoal burner, a smelter and a smithy, and make 20 tools. Deadline: day 22."}, "fail": {"pop": 10, "deadline": 22}, "quests": [{"type": "build", "building": "mine", "n": 1, "reward": {"gold": 40}, "hint": {"ru": "Рудник ставится у скал - как каменоломня, но руда не кончается.", "en": "A mine goes next to rocks, like a quarry, but the ore never runs out."}}, {"type": "build", "building": "charcoal", "n": 1, "reward": {"logs": 20}, "hint": {"ru": "Углежог пережигает брёвна в уголь - его ждут плавильня и кузница.", "en": "The charcoal burner turns logs into coal for the smelter and the smithy."}}, {"type": "made", "resource": "iron", "n": 10, "reward": {"gold": 60}, "hint": {"ru": "Плавильня: руда и уголь - железо.", "en": "Smelter: ore and coal make iron."}}, {"type": "made", "resource": "tools", "n": 20, "reward": {"gold": 200}, "hint": {"ru": "Кузница: железо и уголь - инструменты. Они нужны для 3-го уровня зданий и каменных домов.", "en": "Smithy: iron and coal make tools, needed for level 3 buildings and stone houses."}}]},
+    {"id": "fair", "map": [66, 84], "seed": 3301, "size": "medium", "level": 2, "gold": 300, "citizens": 24, "houses": 6, "stock": {"tools": 10, "planks": 60, "stone": 40, "logs": 40, "bread": 60, "water": 30, "cloth": 10, "leather": 6}, "name": {"ru": "Ярмарка", "en": "The fair"}, "desc": {"ru": "Король объявил ярмарку. Оденьте жителей, накопите 1500 золота и проведите праздник при довольстве от 75%. Срок - 37-й день.", "en": "The king has proclaimed a fair. Clothe the citizens, save 1500 gold and hold a festival with 75% happiness. Deadline: day 37."}, "fail": {"pop": 12, "deadline": 37}, "quests": [{"type": "build", "building": "tannery", "n": 1, "reward": {"gold": 30}, "hint": {"ru": "Свинарник даёт свинину и шкуры, дубильня делает из шкур кожу.", "en": "The piggery yields pork and hides; the tannery turns hides into leather."}}, {"type": "made", "resource": "clothes", "n": 10, "reward": {"gold": 80}, "hint": {"ru": "Портной шьёт одежду из ткани и кожи. Платье нужно каменным домам.", "en": "The tailor sews clothes from cloth and leather. Stone houses want fine clothes."}}, {"type": "gold", "n": 1500, "reward": {"candles": 20}, "hint": {"ru": "Налоги растут с довольством. Лишнее можно продать торговцу.", "en": "Taxes grow with happiness. Sell surplus to the trader."}}, {"type": "happy", "n": 75, "days": 2, "reward": {"gold": 200}, "hint": {"ru": "Праздник в ратуше поднимает довольство на двое суток.", "en": "A festival at the town hall raises happiness for two days."}}]},
+    {"id": "river_trade", "map": [90, 76], "seed": 5151, "size": "medium", "startDay": 25, "level": 1, "gold": 300, "citizens": 14, "houses": 4, "neighbors": true, "stock": {"tools": 6, "planks": 50, "stone": 30, "logs": 50, "bread": 60, "fish": 20, "water": 30, "cloth": 10}, "name": {"ru": "Весна на реке", "en": "Spring on the river"}, "desc": {"ru": "Конец зимы в речной долине. Весной река может разлиться - не ставьте всё в пойме. Договоритесь с соседями, откройте школу и вырастите учеников. Срок - 60-й день.", "en": "Late winter in a river valley. In spring the river may flood - don't build everything on the floodplain. Strike deals with the neighbors, open a school and raise its pupils. Deadline: day 60."}, "fail": {"pop": 8, "deadline": 60}, "quests": [{"type": "build", "building": "tradepost", "n": 1, "reward": {"gold": 60}, "hint": {"ru": "Торговый пост (вкладка «Услуги») открывает договоры с сёлами за краем карты: кнопка «Соседи» в его панели.", "en": "A trading post (Services tab) opens contracts with villages beyond the map: the Neighbors button in its panel."}}, {"type": "deliver", "n": 2, "reward": {"planks": 20}, "hint": {"ru": "Заключите договор на то, что город уже делает. Носильщики свезут товар в пост, раз в неделю повозка отвезёт его соседу.", "en": "Sign a contract for something the town already makes. Carriers stock the post, and once a week a wagon takes the goods to the neighbor."}}, {"type": "build", "building": "school", "n": 1, "reward": {"gold": 40}, "hint": {"ru": "В довольных домах рождаются дети. Школа рядом с домами учит их - выросшие работают быстрее.", "en": "Happy homes have children. A school near the houses teaches them - they grow up to work faster."}}, {"type": "grown", "n": 3, "reward": {"gold": 80}, "hint": {"ru": "Дети взрослеют за несколько суток и становятся жителями - нужны свободные кровати.", "en": "Children grow up in a few days and join the town - they need free beds."}}, {"type": "pop", "n": 60, "reward": {"gold": 100}, "hint": {"ru": "Последнее: 60 жителей.", "en": "Last step: 60 citizens."}}]}
+  ]
+}

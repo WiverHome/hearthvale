@@ -1,0 +1,12 @@
+.gradle/
+build/
+.kotlin/
+local.properties
+*.jks
+*.keystore
+.idea/
+android/libs/
+.claude/
+keystore.properties
+__pycache__/
+CLAUDE.md
