@@ -1,0 +1,36 @@
+# Проверки на каждый push в main и каждый PR: логика игры (тесты core).
+# Публикация веб-версии на Pages живёт отдельно в web.yml, подпись и релизы здесь не затрагиваются.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Сборка и тесты
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: 17
+
+      # Кэш ~/.gradle (зависимости, обёртка, плагины)
+      - uses: gradle/actions/setup-gradle@v6
+
+      # Тесты симуляции: детерминизм, все размеры карт, сохранение и загрузка, повтор по журналу.
+      # Баланс-бот (BalanceTest) из :core:test исключён в core/build.gradle.kts — он долгий.
+      - name: Тесты core
+        run: ./gradlew :core:test --console=plain
